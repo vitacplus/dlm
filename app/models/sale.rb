@@ -22,6 +22,7 @@ aasm column: 'state' do
 	event :fail do 
 		transitions from: :processing, to: :errored
 	end
+end
 
 	def charge_card
    begin
